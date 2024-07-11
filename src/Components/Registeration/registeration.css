@@ -1,0 +1,467 @@
+* {
+  scrollbar-width:thin;
+  scrollbar-color: black rgb(43, 38, 38);
+}
+body{
+  background-color: black;
+}
+
+input[type=file]::file-selector-button {
+  border: 2px solid transparent;
+  padding: .7em .7em;
+  border-radius: .2em;
+  background-color: grey;
+  color: black;
+  transition: 1s;
+}
+
+.scroll{
+margin-left: -60px;
+margin-top: -80px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); 
+}
+
+img{
+    margin-top: 50px;
+}
+
+.logo img {
+ margin-top: -340px;
+ width: 50px;
+}
+
+.registration-image{
+  position: fixed;
+  width: 50%;
+  max-width: 100%;
+  margin-top: -20px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); 
+    }
+  }
+
+.para{
+    font-size: 13px;
+}
+
+#header{
+    font-size: 23px;
+    color: rgb(108, 106, 106);
+}
+
+.form-label{
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left:20px ;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: fit-content;
+    margin-left: 85px;
+
+}
+
+.Text{
+  width: 400px;
+  height: 50px;
+  border: 1px solid grey;
+  text-align:start ;
+}
+
+input[type='text']::placeholder {
+    color: grey;
+  }
+ 
+  input[type='email']::placeholder {
+    color: grey;
+  }
+
+  input[type='password']::placeholder{
+    color: grey;
+  }
+
+.link:hover{
+    color: darkgray;
+}
+  
+.gender-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+.icon {
+    border: 1px solid grey;
+    border-radius: 45%;
+    font-size: 50px;
+    color: grey;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: transparent;
+    transition: all 0.3s ease; 
+}
+
+
+.icon:hover{
+    color: darkgrey;
+}
+
+.icon:visited{
+color: white;
+}
+
+.label {
+    color: white;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+
+.label:hover{
+    color: darkgray;
+}
+.label {
+    transition: all 0.3s ease; 
+}
+
+.password-toggle-icons {
+  margin-top: -50px;
+  margin-left: 350px;
+   cursor: pointer;
+   color: #8d8787;
+   font-size: 25px;
+}
+  .gender{
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+    border: 1px solid darkgray;
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+  }
+
+  .icon.selected {
+    color: white;
+    border: 2px solid white;
+  }
+
+  .alreadyRegistered{
+    margin-left: 220px;
+    margin-top: 10px;
+  }
+
+  Button{
+    margin-top: 10px;
+  }
+
+
+#login{
+  color: white;
+}
+
+
+.accounts{
+  color: white;
+
+}
+
+.accounts:hover{
+  color: darkgray;
+}
+
+.text-danger {
+  font-size: 10px;
+}
+
+#errorFullName{
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+#errorMobile{
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+#errorPassword{
+  font-size: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+
+}
+
+#errorUserName{
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+#errorPhoto{
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+#errorDob{
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+#errorGender{
+  font-size: 10px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.regError{
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+button#buttons {
+  margin-top: 20px;
+}
+
+.textone{
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .scroll {
+    margin-left: 0;
+    margin-top: -50px;
+
+  }
+
+  form {
+    margin-left: 20px;
+  }
+  .logo img {
+    margin-top: -340px;
+    height: 50px;
+  }
+  .alreadyRegistered{
+    margin-left: 160px;
+    margin-top: 10px;
+  }
+  .Text{
+    margin-left: -20px;
+  }
+  .gender{
+    margin-left: -20px;
+  }
+  .password-toggle-icons {
+    margin-left: 330px;
+    margin-top: -53px;
+  }
+
+  button#buttons {
+    margin-left: 80px;
+  }
+  
+  .textone{
+    margin-left: -15px;
+  }
+
+  label#form-name {
+    margin-left: 0px;
+  }
+  
+  label#form-mail {
+    margin-left: 0px;
+  }
+
+  label#form-password {
+    margin-left: 0px;
+  }
+
+  label#form-user-name {
+    margin-left: 0px;
+  }
+
+  label#form-photo {
+    margin-left: 0px;
+  }
+
+  label#form-dob {
+    margin-left: 0px;
+  }
+
+  label#form-gender {
+    margin-left: 0px;
+  }
+
+  label#form-countryCode {
+    margin-left: 0px;
+  }
+
+
+
+  
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .registration-image {
+  margin-top: 20px;
+  }
+
+  .logo img {
+    margin-top: -340px;
+    height: 50px;
+  }
+  .scroll {
+    margin-left: -10px;
+    margin-top: 0px;
+
+  }
+#move{
+  margin-left: -40px;
+}
+  .Text{
+    width: 350px;
+    height: 50px;
+  }
+  .password-toggle-icons {
+    margin-left: 280px;
+    margin-top: -50px;
+  }
+  .gender{
+    height: 150px;
+    width: 350px;
+  }
+  .alreadyRegistered{
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .registration-image {
+    display: none;
+  }
+  .scroll {
+    margin-left: 90px;
+    margin-top: -20px;
+
+  }
+  form {
+    margin-left: -15px;
+  }
+  .alreadyRegistered{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  #buttons{
+    margin-left: 70px;
+  }
+  div#card-body {
+    margin-left: 20px;
+}
+button#buttons {
+  margin-left: 60px;
+}
+.textone {
+  margin-left: 15px;
+}
+  
+}
+
+@media only screen and (max-width: 376px) {
+
+  .scroll {
+    margin-left: 70px;
+    margin-top: -20px;
+
+  }
+  form {
+    margin-left: -10px;
+  }
+  .Text{
+    width: 330px;
+    height: 45px;
+  }
+  .gender{
+    height: 150px;
+    width: 330px;
+  }
+  #buttons{
+    margin-left: 65px;
+  }
+  .alreadyRegistered{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .password-toggle-icons {
+    margin-left: 280px;
+  }
+  input[type=file]::file-selector-button {
+    padding: .5em .5em;
+  }
+  button#buttons {
+    margin-left: 45px;
+}
+.textone {
+  margin-left: -10px;
+}
+}
+
+@media only screen and (max-width: 320px) {
+
+  .scroll {
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+  form {
+    margin-left: -15px;
+    
+  }
+  .Text{
+    width: 300px;
+    height: 50px;
+  }
+  .gender{
+    width: 300px;
+  }
+  #button{
+    margin-left: 50px;
+  }
+  .alreadyRegistered{
+    margin-left: 35px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .password-toggle-icons {
+    margin-left: 240px;
+    margin-top: -50px;
+  }
+
+  input[type=file]::file-selector-button {
+    padding: .1em .1em;
+    margin-top: 1px;
+    margin-left: 1px;
+    font-size: 13px;
+  }
+  div#card-body {
+    margin-left: 0px;
+}
+}
+
+
+
