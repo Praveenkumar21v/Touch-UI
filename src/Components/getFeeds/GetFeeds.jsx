@@ -13,7 +13,7 @@ import { GoUnmute } from "react-icons/go";
 import { IoPlay } from "react-icons/io5";
 import { IoIosPause } from "react-icons/io";
 import { togglePostLike } from "../../Containers/PostLikeSlice";
-import { toggleReelLike } from "../../Containers/reelLikeSlice";
+import { toggleReelLike } from "../../Containers/ReelLikeSlice";
 import { IoSend } from "react-icons/io5";
 import { Button, Modal, Alert } from "react-bootstrap";
 import data from '@emoji-mart/data'
@@ -25,7 +25,7 @@ import { updateLikeStatus } from "../../Containers/PostLikeSlice";
 import { useNavigate } from "react-router-dom";
 import { TbComet } from "react-icons/tb";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { reelComment } from "../../Containers/reelCommentSlice";
+import { reelComment } from "../../Containers/ReelCommentSlice";
 import "@flaticon/flaticon-uicons/css/all/all.css";
 import { fetchComments } from "../../Containers/GetCommentsSlice";
 import Spinner from "../Spinner/spinner";
@@ -763,8 +763,8 @@ const GetFeedDataComponent = () => {
                             <p
                               className={
                                 feed.feed_type === "POST"
-                                  ? "follower-count"
-                                  : "follower-count-reel"
+                                  ? "follow-count"
+                                  : "follow-count-reel"
                               }
                             >
                               {" "}
