@@ -16,12 +16,12 @@ import { IoMdLogOut } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { IoVolumeMute } from "react-icons/io5";
 import { GoUnmute } from "react-icons/go";
-import { toggleReelLike } from "../../Containers/reelLikeSlice";
+import { toggleReelLike } from "../../Containers/ReelLikeSlice";
 import { IoSend } from "react-icons/io5";
 import data from '@emoji-mart/data'
 import Picker from '@emoji-mart/react'
 import { HiOutlineFaceSmile } from "react-icons/hi2";
-import { reelComment } from "../../Containers/reelCommentSlice";
+import { reelComment } from "../../Containers/ReelCommentSlice";
 import { FaHeart } from "react-icons/fa";
 import { updateLikeStatus } from "../../Containers/PostLikeSlice";
 import CreateNewPost from "../getFeeds/CreatePost";
