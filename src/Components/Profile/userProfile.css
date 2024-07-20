@@ -1,0 +1,734 @@
+.cards {
+  overflow: visible;
+  width: 300px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 520px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+
+.back {
+  background-color: #383737;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.cards:hover .content {
+  transform: rotateY(180deg);
+}
+
+.titles{
+  font-size: 15px;
+  font-weight: 350;
+  color: rgb(192, 189, 189);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.description {
+  box-shadow: 0px 0px 10px 5px #00000088;
+  width: 100%;
+  padding: 10px;
+  background-color: #00000099;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  margin-top: -60px;
+}
+
+
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffbb66;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+span#\@ {
+  font-style: italic;
+  letter-spacing: 10px;
+  color: #A67C00;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#cardProfile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 0px;
+  margin-top:-60px;
+}
+
+.un {
+  font-size: 20px;
+  color: rgb(209, 207, 207);
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.n {
+  font-size: 14px;
+  margin-top: -30px;
+  color: rgb(209, 207, 207);
+  font-weight: normal;
+}
+
+.accountType {
+  font-size: 14px;
+  color: rgb(209, 207, 207);
+  font-weight: normal;
+  margin-top: 0px;
+  margin-left: 20px;
+  line-height: 20px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+#bio {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-break: anywhere;
+  margin-top: -10px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.logo2 img {
+  width: 50px;
+  height: 60px;
+  margin-top: 0px;
+}
+
+.logo2 {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.text2 {
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
+
+#back{
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#back:hover{
+  color: rgb(120, 116, 116);
+}
+
+#back:active{
+  color:white;
+}
+
+.pointsone{
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(219, 216, 216);
+
+}
+
+.coinsone{
+  color: #DAA520;
+  font-size: 26px;
+}
+
+.coinicon{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+top: 30px;
+right:20px;
+}
+
+.post-svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 18px;
+  right: 13px;
+}
+
+.post-timer {
+  margin-left: -10px;
+}
+
+
+.modal-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modal-left {
+  flex: 1; 
+  overflow: hidden; 
+}
+
+
+
+.modal-header{
+  position: relative;
+  z-index: 3;
+}
+
+.modal-right {
+  flex: 1; 
+  padding-left: 10px; 
+  
+}
+
+#modal {
+  max-width: 80%; 
+  max-height: 80%;
+}
+
+.user-post-counter {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid rgb(79, 79, 79);
+  border-bottom: 1px solid rgb(79, 79, 79);
+  padding: 20px;
+  width: 444px;
+  position: relative;
+  margin-top: 65px;
+  margin-left: 442px;
+  z-index: 2;
+}
+
+#description{
+    margin-top: -3px;
+  color: white;
+  font-weight: 300;
+}
+
+#description-one-block-line{
+  margin-top: -3px;
+  color: white;
+  font-weight: 300;
+  line-break:anywhere;
+  width: 180px;
+}
+
+
+
+.disable{
+  visibility:hidden;
+}
+
+    .logo2{
+      cursor: pointer;
+    }
+    .modal-image-transition {
+      transition: transform 0.5s ease;
+    }
+
+    
+    .main-pvt-icons{
+      display: flex;
+      gap: 90px;
+      float: right;
+      margin-right: 40px;
+      margin-top: -60px;
+    }
+
+    .cameras-icon {
+      color: rgb(210, 209, 209);
+      margin-top: 20px;
+      margin-left: 0px;
+      cursor: pointer;
+  }
+
+.cameras-icon:hover{
+  color: white;
+}
+    
+.logout-icon {
+  color: rgb(210, 209, 209);
+  margin-top: 22px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+    .logout-icon:hover{
+      color: white;
+    }
+
+
+  .comment-user-profile {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.user-comment {
+  display: flex;
+}
+
+.post-time {
+  font-size: 12px;
+  opacity: 0.8;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.reel-time {
+  font-size: 12px;
+  opacity: 0.8;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+
+#reel-time{
+  position: relative;
+  right: 140px;
+  top: 24px;
+}
+
+#profile-cam-modal button.btn-close{
+  position: absolute;
+  top: 108px;
+right: 30px;
+}
+
+img.post-video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.user-video-media-modal {
+  width: 452px;
+  height: 520px;
+  object-fit: cover;
+  position: absolute;
+  top: -54px;
+  left: 0px;
+  z-index: 4;
+}
+
+.mute-toggle{
+  position: absolute;
+  z-index: 4;
+  top: 320px;
+  left: 400px;
+  opacity: 0;
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 90px;
+  background-color: rgba(39, 37, 37,0.8);
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+
+.modal-left:hover .mute-toggle{
+  opacity: 1;
+}
+
+.user-video-overlay{
+  font-size: 15px;
+  background-color: rgba(39, 37, 37,0.3);
+  border-radius: 50%;
+position: absolute;
+top: 180px;
+left: 220px;
+z-index: 4;
+padding: 10px;
+cursor: pointer;
+display: flex;  
+}
+
+video{
+  cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+  .cards {
+    width: 300px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 320px;
+  }
+  #cardProfile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 0px;
+    margin-top:-30px;
+  }
+  
+  .logo2 img {
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+  }
+  
+  .logo2 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .text2 {
+    margin-left: 20px;
+    margin-top: 20px;
+  
+  }
+  
+  #back{
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .cards {
+    margin-top: 40px;
+    margin-left: 220px;
+  }
+
+  .logo2 img {
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+  }
+
+}
+
+@media screen and (max-width:426px) {
+  .cards {
+    width: 250px;
+    height: 300px;
+    margin-top: 25px;
+    margin-left: 85px;
+  }
+
+  .logo2 img {
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+  }
+
+  #cardProfile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 0px;
+    margin-top: -75px;
+}
+
+.un {
+  font-size: 15px;
+  color: rgb(209, 207, 207);
+  margin-top: -22px;
+}
+  
+.n {
+  font-size: 12px;
+  margin-top: -30px;
+  color: rgb(209, 207, 207);
+  font-weight: normal;
+}
+  
+#bio {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-break: anywhere;
+  margin-top: -33px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 10px;
+}
+  
+  .logo2 img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+  }
+  
+  .logo2 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .text2 {
+    margin-left: 20px;
+    margin-top: 20px;
+  
+  }
+  
+  #back{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .coinicon {
+    gap: 5px;
+    top: 20px;
+    right: 20px; 
+  }
+
+  .pointsone {
+    font-size: 16px;
+  }
+
+  .coinsone{
+    font-size: 24px;
+  }
+
+  .accountType {
+    margin-top: -30px;
+}
+
+  .titles{
+    font-size: 14px;
+    font-weight: 350;
+  }
+
+  #profile-cam-modal button.btn-close {
+    position: absolute;
+    top: 90px;
+    right: 30px;
+  }
+
+  .post-svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+}
+}
+
+@media screen and (max-width:376px) {
+  .cards {
+    margin-left: 60px;
+    margin-top: 40px;
+  }
+  .titles{
+    font-size: 12px;
+    font-weight: 350;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .cards {
+    width: 250px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 35px;
+  }
+  #cardProfile {
+    width: 70px;
+    height: 70px;
+    margin-left: 0px;
+    margin-top: -70px;
+  }
+  .un {
+    font-size: 13px;
+    color: rgb(209, 207, 207);
+    margin-top: -24px;
+    margin-left: 0px;
+}
+  
+.n {
+  font-size: 11px;
+  margin-top: -26px;
+  margin-left: 2px;
+}
+  
+  .bio {
+    font-size: 11px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .logo2 img {
+    margin-top: -10px;
+  }
+#text2{
+  margin-left: 40px;
+}
+.accountType {
+  font-size: 12px;
+}
+
+.coinicon {
+  gap: 3px;
+  top: 20px;
+  right: 10px; 
+}
+
+.pointsone {
+  font-size: 12px;
+}
+
+.coinsone{
+  font-size: 18px;
+}
+
+.titles{
+  font-size: 10px;
+  font-weight: 350;
+}
+
+#profile-cam-modal button.btn-close {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
+#bio {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-break: anywhere;
+  margin-top: -33px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 9px;
+}
+}
